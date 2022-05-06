@@ -615,7 +615,7 @@ export default {
 			.delivery-date{
 				margin-top: 20rpx;
 				margin-right: 30rpx;
-				text-align:right
+				// text-align:right
 				
 			}
 			
