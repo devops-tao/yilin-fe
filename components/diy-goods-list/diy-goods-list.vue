@@ -118,12 +118,13 @@
 							<!-- <view class="sale font-size-activity-tag color-tip">已售{{ item.sale_num }}{{ item.unit ? item.unit : '件' }}</view> -->
 						</view>
 						
-						<view class="delete-price font-size-activity-tag color-tip">
+						<!-- 注释划线价格 -->
+						<!-- <view class="delete-price font-size-activity-tag color-tip">
 							<block>
 								<text class="unit">{{ $lang('common.currencySymbol') }}</text>
 								{{ item.market_price > 0 ? item.market_price : item.price }}
 							</block>
-						</view>
+						</view> -->
 						
 						<!-- <view class="btn color-base-bg"><text class="iconfont icongouwuche3"></text></view> -->
 					</view>
