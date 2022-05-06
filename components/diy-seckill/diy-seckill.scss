@@ -1,0 +1,497 @@
+.diy-seckill {
+	// padding: 0 30rpx;
+
+	.marketing-wrap.marketing-wrap-1 {
+		background-color: #ffffff;
+		border-radius: 10rpx;
+		overflow: hidden;
+		box-sizing: border-box;
+		position: relative;
+
+		> image {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			z-index: 1;
+		}
+
+		.marketimg-box {
+			padding: 30rpx 0;
+			position: relative;
+			z-index: 2;
+
+			.marketimg-box-title {
+				display: flex;
+				height: 32rpx;
+				line-height: 32rpx;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 30rpx;
+
+				.marketimg-box-title-left {
+					display: flex;
+					align-items: center;
+					line-height: 32rpx;
+					margin-right: 18rpx;
+
+					image {
+						width: 126rpx;
+						height: 30rpx;
+						margin-right: 20rpx;
+					}
+
+					text {
+						color: #909399;
+					}
+				}
+
+				.seckill-title-time {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					.seckill-title-name {
+						font-size: 28rpx;
+						margin-right: 7rpx;
+						line-height: 1;
+						color: #777777;
+						font-size: $font-size-base;
+					}
+					.symbol {
+						padding-left: 6rpx;
+						padding-right: 6rpx;
+						height: 28rpx;
+						line-height: 24rpx;
+					}
+					.seckill-H {
+						width: 30rpx;
+						height: 30rpx;
+						background-color: #383838;
+						color: #ffffff;
+						font-size: $font-size-tag;
+						text-align: center;
+						line-height: 30rpx;
+						border-radius: 3rpx;
+					}
+					.seckill-I {
+						width: 28rpx;
+						height: 28rpx;
+						background-color: #383838;
+						color: #ffffff;
+						font-size: $font-size-activity-tag;
+						text-align: center;
+						line-height: 28rpx;
+						border-radius: 5rpx;
+					}
+					.seckill-S {
+						width: 28rpx;
+						height: 28rpx;
+						background-color: #ff4544;
+						color: #ffffff;
+						font-size: $font-size-activity-tag;
+						text-align: center;
+						line-height: 28rpx;
+						border-radius: 5rpx;
+					}
+				}
+
+				.marketimg-box-title-right {
+					display: flex;
+					align-items: center;
+
+					text {
+						font-size: 24rpx;
+					}
+
+					&.red text {
+						background: linear-gradient(-55deg, #ff5151 0%, #ff7b91 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+
+					&.blue text {
+						background: linear-gradient(-55deg, #0ecfd3 0%, #12d0ae 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+
+					&.yellow text {
+						background: linear-gradient(-55deg, #feb632 0%, #fe6232 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+
+					&.violet text {
+						background: linear-gradient(-55deg, #627bfd 0%, #8662fd 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+				}
+			}
+		}
+
+		.seckill-time-list {
+			margin-top: 30rpx;
+			width: 100%;
+			flex-direction: row;
+			line-height: 1;
+			padding: 0 30rpx;
+			box-sizing: border-box;
+
+			.seckil-nav {
+				width: 100%;
+				white-space: nowrap;
+			}
+
+			.nav-item {
+				display: inline-block;
+				text-align: center;
+				border-bottom: 2rpx solid #eeeeee;
+				padding: 0 28rpx;
+
+				.nav-item-con {
+					padding-bottom: 20rpx;
+
+					.nav-title {
+						font-size: 28rpx;
+						color: #606266;
+						line-height: 28rpx;
+					}
+
+					.nav-content {
+						font-size: 20rpx;
+						line-height: 20rpx;
+						color: #909399;
+						margin-top: 10rpx;
+					}
+				}
+
+				&.active {
+					border-bottom: 2rpx solid #ff4544;
+					color: #ff4544;
+
+					.nav-item-con {
+						.nav-title {
+							color: #ff4544;
+						}
+
+						.nav-content {
+							color: #ff4544;
+						}
+					}
+				}
+			}
+		}
+
+		.marketimg-box-con {
+			width: 100%;
+			height: 340rpx;
+			margin-top: 20rpx;
+			// padding: 0 20rpx;
+			// overflow: hidden;
+			// box-sizing: border-box;
+
+			.marketimg-box-con-scroll {
+				width: 100%;
+				flex-direction: row;
+				white-space: nowrap;
+				line-height: 1;
+
+				.empty {
+					padding-top: 20rpx;
+				}
+			}
+
+			.marketimg-box-con-scroll {
+				width: calc(100% - 30rpx);
+				margin: 0 10rpx 0 20rpx;
+				line-height: 1;
+				white-space: nowrap;
+			}
+
+			.marketimg-box-con-item {
+				display: inline-block;
+				width: 33.333%;
+				&.marketimg-box-con-item_two {
+					width: calc((100% - 40rpx) / 3);
+				}
+				.wrap {
+					margin: 0 20rpx 0 10rpx;
+				}
+
+				.img-box {
+					width: 188rpx;
+					height: 188rpx;
+				}
+
+				image {
+					width: 188rpx;
+					height: 188rpx;
+					border-radius: 10rpx;
+				}
+
+				.content {
+					.title {
+						font-size: $font-size-base;
+						line-height: $font-size-base;
+						margin-top: 20rpx;
+						width: 100%;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+
+					.price-box {
+						font-size: $font-size-tag;
+						font-weight: 600;
+						height: 32rpx;
+						line-height: 32rpx;
+						margin-top: 20rpx;
+
+						text {
+							font-size: 32rpx;
+						}
+					}
+
+					.num {
+						font-size: 20rpx;
+						line-height: 20rpx;
+						color: #909399;
+						margin-top: 20rpx;
+						text-decoration: line-through;
+					}
+				}
+			}
+
+			.marketimg-swiper {
+				width: 100%;
+
+				.swiper-item {
+					padding: 0 30rpx;
+					box-sizing: border-box;
+				}
+
+				.marketimg-box-con-item {
+					margin-right: 20rpx;
+
+					&:nth-child(3n + 3) {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 风格二 / 风格三
+.marketing-wrap-two {
+	background-color: #FFFFFF;
+	border-radius: 10rpx;
+	
+	&.marketing-wrap-2 {
+		padding: 40rpx 30rpx 10rpx;
+	}
+	
+	&.marketing-wrap-3 {
+		padding: 40rpx 30rpx 0;
+		
+		.marketimg-box-title-right {
+			text-align: center;
+			line-height: 100rpx;
+			border-top: 1rpx solid #EEEEEE;
+		}
+	}
+	
+	.marketimg-box-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 10rpx;
+	}
+	
+	.marketimg-box-title-2 {
+		image {
+			width: 206rpx;
+			height: 32rpx;
+		}
+	}
+	
+	.marketimg-box-title-3 {
+		justify-content: center;
+		
+		image {
+			width: 348rpx;
+			height: 34rpx;
+		}
+		
+		.seckill-title-time {
+			justify-content: center;
+		}
+	}
+	
+	.marketimg-box-title-left {
+		font-size: 0;
+	}
+	
+	.seckill-title-time {
+		display: flex;
+		align-items: center;
+		height: 32rpx;
+		line-height: 32rpx;
+		margin-top: 19rpx;
+		
+		view {
+			font-size: $font-size-tag;
+			line-height: 32rpx;
+		}
+		
+		.seckill-title-name {
+			margin-right: 18rpx;
+			color: rgba(255, 69, 68, .5);
+		}
+		
+		.seckill-H, .seckill-I, .seckill-S {
+			width: 32rpx;
+			background-color: #303133;
+			border-radius: 4rpx;
+			color: #FFFFFF;
+			text-align: center;
+		}
+		
+		.symbol {
+			color: rgba(255, 69, 68, .5);
+			margin: 0 8rpx;
+		}
+	}
+	
+	.marketimg-box-title-right {
+		text {
+			font-size: $font-size-tag;
+			color: $color-tip;
+		}
+	}
+	
+	// 商品列表
+	.marketimg-box-con {
+		
+		.wrap {
+			display: flex;
+			align-items: center;
+			
+			.img-box {
+				width: 190rpx;
+				height: 190rpx;
+				flex-shrink: 0;
+				margin-right: 18rpx;
+				border-radius: 10rpx;
+				overflow: hidden;
+				
+				image {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			
+			.content {
+				padding: 30rpx 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				border-bottom: 1rpx solid #EEEEEE;
+				height: 190rpx;
+				width: 420rpx;
+				
+				.top {
+					font-size: 0;
+					
+					.title {
+						font-size: $font-size-base;
+						line-height: 40rpx;
+						position: relative;
+						bottom: 8rpx;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-line-clamp: 2;
+						-webkit-box-orient: vertical;
+						height: 80rpx;
+					}
+					
+					.progress {
+						display: flex;
+						align-items: center;
+						height: 20rpx;
+						margin-top: 4rpx;
+						
+						.left {
+							margin-right: 20rpx;
+							.box {
+								width: 240rpx;
+								height: 20rpx;
+								border-radius: 10rpx;
+								background-color: #FCECD7;
+							}
+							
+							.con {
+								height: 20rpx;
+								border-radius: 10rpx;
+								background-color: #FDBE6C;
+							}
+						}
+						
+						.right {
+							color: $color-tip;
+							font-size: 20rpx;
+							line-height: 1;
+						}
+					}
+				}
+				
+				.bot {
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-end;
+					
+					.price-box {
+						display: flex;
+						align-items: flex-end;
+						line-height: 1;
+						
+						.unit {
+							font-size: $font-size-tag;
+						}
+						
+						.seckill-price {
+							font-size: 32rpx;
+							margin-right: 10rpx;
+							font-weight: bold;
+						}
+						
+						.original-price {
+							font-size: 20rpx;
+							color: $color-tip;
+							text-decoration: line-through;
+						}
+					}
+					
+					.btn {
+						padding: 0;
+						margin: 0;
+						color: #FFFFFF;
+						width: 160rpx;
+						height: 50rpx;
+						text-align: center;
+						line-height: 50rpx;
+						flex-shrink: 0;
+					}
+				}
+			}
+		}
+		
+		.marketimg-box-con-item {
+			&:last-child .content {
+				border-bottom: 0;
+			}
+		}
+	}
+}

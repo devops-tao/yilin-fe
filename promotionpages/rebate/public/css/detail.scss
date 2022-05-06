@@ -1,0 +1,328 @@
+// 营销活动
+.goods-promotion {
+	.price-info {
+		/* .pinfan-price{
+			display: flex;
+			align-items: center;
+			margin-bottom: 10rpx;
+		} */
+		.pintuan-num {
+			border: 2rpx solid #fff;
+			color: #fff;
+			display: inline-block;
+			line-height: initial;
+			border-radius: $border-radius;
+			vertical-align: middle;
+			margin-left: 20rpx;
+			height: 30rpx;
+			line-height: 30rpx;
+			padding-right: 6rpx;
+			margin-top: 16rpx;
+			overflow: hidden;
+			.num_pintuan{
+				background-color: #fff;
+				font-size: $font-size-goods-tag;
+				padding: 0 6rpx;
+				display: inline-block;
+				vertical-align: super;
+				color: #ff4644;
+				// border-radius: 8rpx 0 0 8rpx;
+			}
+			.num_txt{
+				font-size: $font-size-activity-tag;
+				vertical-align: super;
+				padding: 2rpx 6rpx;
+			}
+		}
+	}
+}
+
+.group-wrap {
+	.goods-module-wrap {
+		&.promotion-price-wrap {
+			display: inline-block;
+			font-size: $font-size-tag;
+			border-radius: 30rpx;
+			padding: 8rpx 18rpx;
+			margin-right: 10rpx;
+			vertical-align: middle;
+			// border: 1px solid;
+			margin-top: 10rpx;
+			line-height: 1;
+			color: #fff;
+			.label {
+				font-size: $font-size-activity-tag;
+				margin-right: 10rpx;
+				vertical-align: middle;
+			}
+
+			.price-symbol {
+				font-size: $font-size-tag;
+				top: 0;
+				vertical-align: middle;
+			}
+
+			.price {
+				font-size: $font-size-base;
+			}
+		}
+	}
+}
+.step{
+	margin-bottom: 10px;
+	padding:15px;
+	background: #ffffff;
+	.pin-step{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin-top: 30rpx;
+		view{
+			// width:120rpx;
+			text-align: center;
+			image{
+				width: 48rpx;
+				height: 48rpx;
+			}
+			view{
+				font-size: $font-size-tag;
+			}
+		}
+		image{
+			width: 40rpx;
+			height: 10rpx;
+		}
+	}
+}
+.promotion-tag {
+	color: #fff;
+	font-size: $font-size-activity-tag;
+	border-top-left-radius: 30rpx;
+	border-bottom-left-radius: 30rpx;
+	padding: 4rpx 10rpx;
+	margin-right: 10rpx;
+	vertical-align: middle;
+}
+
+.spelling-block {
+	font-size: $font-size-base;
+	width: 100%;
+	height: 130rpx;
+	background: #fff;
+
+	.item {
+		padding: 20rpx 0;
+		display: flex;
+		align-items: center;
+		.user-logo {
+			display: inline-block;
+			margin: 0 30rpx 0 0;
+			vertical-align: top;
+			image {
+				width: 80rpx;
+				vertical-align: middle;
+				border-radius: 50%;
+				height: 80rpx;
+			}
+		}
+		.user-name {
+			width: 208rpx;
+			display: inline-block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			vertical-align: top;
+			font-size: $font-size-base;
+		}
+		.info {
+			font-size: $font-size-tag;
+			margin-right: 20rpx;
+			display: inline-block;
+			text-align: right;
+			flex: 1;
+			.tip {
+				text-align: right;
+			}
+		}
+	}
+}
+
+// 参与拼团
+.pintuan-popup-layer {
+	.layer {
+		padding: 30rpx;
+		width: 422rpx;
+	}
+	.title {
+		text-align: center;
+		padding: 20rpx;
+		font-size: $font-size-toolbar;
+		font-weight: bold;
+	}
+	.info {
+		font-size: $font-size-tag;
+		text-align: center;
+	}
+	.mask-layer-spelling-close {
+		position: absolute;
+		right: -20rpx;
+		top: -20rpx;
+		width: 60rpx;
+		height: 60rpx;
+	}
+	.user-list {
+		padding: 40rpx 0;
+		text-align: center;
+		.item {
+			position: relative;
+			margin-right: 20rpx;
+			display: inline-block;
+			.boss {
+				position: absolute;
+				left: -24rpx;
+				top: 0rpx;
+				color: #fff;
+				border-radius: 20rpx;
+				font-size: $font-size-tag;
+				padding: 4rpx 10rpx;
+				z-index: 1;
+				line-height: 1;
+			}
+			image {
+				width: 80rpx;
+				height: 80rpx;
+				vertical-align: middle;
+				border-radius: 50%;
+			}
+		}
+		.imgX {
+			width: 100%;
+			white-space: nowrap;
+			box-sizing: border-box;
+		}
+	}
+	button {
+		color: #fff;
+		border: 0;
+		margin: 16rpx auto;
+		display: block;
+		width: 90%;
+	}
+}
+
+
+
+.goods-detail-tab {
+	.detail-tab {
+		display: flex;
+		justify-content: space-around;
+	}
+} 
+
+//社群
+.detail-community {
+	background: #fff;
+	padding: 30rpx;
+	margin-bottom: 20rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	.community-box {
+		display: flex;
+		align-items: center;
+		
+		image {
+			width: 70rpx;
+			height: 70rpx;
+			border-radius: 10rpx;
+			margin-right: 20rpx;
+		}
+		.community-title {
+			font-family: PingFang-SC-Medium;
+			font-size: 28rpx;
+			// line-height: 36rpx;
+			color: #303133;
+		}
+		.community-txt {
+			font-family: PingFang-SC-Medium;
+			font-size: 24rpx;
+			color: #909399;
+			width: 450rpx;
+			overflow: hidden;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+		}
+	}
+	.community-btn {
+		width: 100rpx;
+		height: 50rpx;
+		line-height: 50rpx;
+		background-color: #03bd04;
+		border-radius: 10rpx;
+		text-align: center;
+		font-family: PingFang-SC-Medium;
+		font-size: 24rpx;
+		color: #ffffff;
+	}
+}
+.community-model {
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,.4);
+	z-index: 9999;
+	.community-model-content {
+		width: 500rpx;
+		height: 600rpx;
+		background-color: #ffffff;
+		border-radius: 10rpx;
+		margin:35% auto 0;
+		position: relative;
+		overflow: hidden;
+		.community-model-content-radius {
+			width: 600rpx;
+			height: 240rpx;
+			border-radius: 100%;
+			background: $base-color;
+			position: absolute;
+			left: -50rpx;
+			top: -60rpx;
+			view {
+				margin-top: 120rpx;
+				text-align: center;
+				font-family: PingFang-SC-Bold;
+				font-size: 30rpx;
+				color: #ffffff;
+			}
+			}
+			.community-model-content-draw {
+				width: 260rpx;
+				height: 260rpx;
+				margin:214rpx auto 0;
+				
+				image {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.community-model-content-text {
+				font-family: PingFang-SC-Medium;
+				font-size: 24rpx;
+				color: #909399;
+				text-align: center;
+				margin-top: 20rpx;
+			}
+		}
+		.community-model-close {
+			width: 56rpx;
+			height: 56rpx;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			margin:50rpx auto 0;
+			text-align: center;
+			color: #fff;
+		}
+}
