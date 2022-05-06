@@ -92,7 +92,8 @@
 						<view class="goods-tag" :style="{'background': 'url(' + bgImg + ') no-repeat', 'backgroundSize': 'cover'}" v-if="goodsValue.goodsTag == 'default' && goodsTag(item) != ''">{{ goodsTag(item) }}</view>
 						<view class="goods-tag-img" v-if="goodsValue.goodsTag == 'diy'"><image :src="$util.img(goodsValue.tagImg.imageUrl)" mode=""></image></view>
 						<view class="bg"></view>
-						<view class="num">已售{{ item.sale_num }}{{ item.unit ? item.unit : '件' }}</view>
+						<!-- <view class="num">已售{{ item.sale_num }}{{ item.unit ? item.unit : '件' }}</view> -->
+						<view class="num">已售{{ item.sale_num }}</view>
 					</view>
 					<view class="info-wrap">
 						<view class="name-wrap">
@@ -109,14 +110,16 @@
 								<view class="discount-price">
 									<text class="unit color-base-text font-size-tag">{{ $lang('common.currencySymbol') }}</text>
 									<text class="price color-base-text font-size-toolbar">{{ showPrice(item) }}</text>
+									<text v-if='item.unit' class='unit-price'>{{item.unit.split('#')[1]}}</text>
 								</view>
 								<view class="member-price-tag" v-if="item.member_price && item.member_price == showPrice(item)">
 									<image :src="$util.img('upload/uniapp/goods/vip.png')" mode="widthFix"></image>
 								</view>
 							</view>
-							
+														
 							<!-- <view class="sale font-size-activity-tag color-tip">已售{{ item.sale_num }}{{ item.unit ? item.unit : '件' }}</view> -->
 						</view>
+						<view v-if='item.unit' class='delivery-date'>到货日期 {{item.unit.split('#')[0]}}</view>
 						
 						<!-- 注释划线价格 -->
 						<!-- <view class="delete-price font-size-activity-tag color-tip">
@@ -609,6 +612,13 @@ export default {
 				margin-top: 15rpx;
 			}
 			
+			.delivery-date{
+				margin-top: 20rpx;
+				margin-right: 30rpx;
+				text-align:right
+				
+			}
+			
 			.lineheight-clear {
 				margin-right: 20rpx;
 				display: flex;
@@ -618,6 +628,11 @@ export default {
 				.discount-price {
 					line-height: 1;
 					font-weight: bold;
+					.unit-price{
+						font-size: 12px;
+						font-weight: normal;
+						padding-left: 80rpx;
+					}
 				}
 				
 				.member-price-tag {

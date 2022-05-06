@@ -50,7 +50,8 @@
 				>
 					<view class="price-info">
 						<view class="img-wrap"><image :src="$util.img('upload/uniapp/goods/detail_discount_tag.png')" mode="aspectFit"></image></view>
-						<view class="sale-num">已售{{ goodsSkuDetail.sale_num }} {{ goodsSkuDetail.unit }}</view>
+						<!-- <view class="sale-num">已售{{ goodsSkuDetail.sale_num }} {{ goodsSkuDetail.unit }}</view> -->
+						<view class="sale-num">已售{{ goodsSkuDetail.sale_num }}</view>
 					</view>
 
 					<view class="countdown" :style="{ backgroundImage: 'url(' + $util.img('upload/uniapp/goods/detail_promotion_right_bg.png') + ')' }">
@@ -103,7 +104,8 @@
 								<text v-if="goodsSkuDetail.is_free_shipping">快递 包邮</text>
 								<text v-else>快递 买家承担</text>
 							</block>
-							<text>销量 {{ goodsSkuDetail.sale_num }} {{ goodsSkuDetail.unit }}</text>
+							<!-- <text>销量 {{ goodsSkuDetail.sale_num }} {{ goodsSkuDetail.unit }}</text> -->
+							<text>销量 {{ goodsSkuDetail.sale_num }}</text>
 						</view>
 						<!-- 会员卡 -->
 						<view class="member-card-wrap" @click="$util.redirectTo('/otherpages/member/card_buy/card_buy')" v-if="membercard">
